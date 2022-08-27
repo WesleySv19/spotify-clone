@@ -1,0 +1,264 @@
+/*
+* 
+* @author Jamilton Damasceno
+*/
+
+/* LAYOUT */
+
+html, body, #home {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+body {
+    background: url(../imagens/capa.png), 
+                url(../imagens/ruido.png),
+                linear-gradient(50deg, #1ed760, black);
+    background-attachment: fixed ;
+}
+
+/* LOGO ANIMAÇÃO */
+@keyframes animacao {
+    from {
+        background-color: #1ed760;
+    }
+
+    to {
+        background-color: black;
+    } }
+
+/* BARRA DE NAVEGAÇÃO */
+nav.navbar-transparente {
+    padding: 15px 0;
+    background: rgba(0,0,0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link { 
+    color: white;
+    font-family: fantasy, copperplate;
+    margin: 8px;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover { 
+    color: #1ed760;
+    transition: all 0.5s;
+}
+
+.divisor {
+    width: 1px;
+    background-color: white;
+    margin: 20px 15px;
+}
+
+#logo{
+    background-color: #1ed760;
+    border-radius: 30px;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+/* CAPA */
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: 0.4s, color 0.4;
+    padding: 10px 20px;
+}
+
+.btn-purple {
+    background-color: #7c25f8;
+}
+
+.btn-purple:hover {
+    background-color: #6207e3;
+    color: white;
+    transition: all 0.5s;
+}
+.btn-white {
+    border: 2px solid white;
+}
+
+
+.btn-white:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+/* Estruturas conteudos */
+
+.caixa {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#servicos {
+    background-color: white;
+}
+
+.albuns {
+    padding: 10px 0 ;
+}
+
+/* TIPOGRAFIA */
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#servicos h2, h3 {
+    color: #7016ee;
+}
+
+.servicos-texto {
+    color: black;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+
+#recursos h3,h2 {
+    color: #9bf0e1;
+}
+
+.rotacao {
+    transform: rotate(30deg);
+    padding: 80px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+
+footer ul  {
+    list-style: none;
+
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+
+footer h5 {
+    color: #919496;
+    font-size: 15px;
+}
+footer li a {
+    color:  white   ;
+}
+footer li a:hover { 
+    color:  #007bff;
+    text-decoration: none;
+}
+    /* CAROUSEL */
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    padding: 15px;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 475.98px) and (max-width:575px) {
+    .btn-custom {
+        margin: 4px 15px;
+    }
+    #logo {
+        margin-left: 20px;
+    }
+    #botao-bars {
+        margin-right: 20px;
+    }
+    .imagens-album {
+        display: none;
+    }
+
+    .rotacao {
+        display: none;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        padding: 10px;
+    }
+
+    #logo img {
+        padding: 2px;
+    }
+
+    footer img {
+        float: right;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */ 
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .btn-custom {
+        margin: 4px 15px;
+    }
+    .imagens-album {
+        display: none;
+    }
+    .rotacao {
+        display: none;
+    }
+    footer img {
+        float: right;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* Extra Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+}
